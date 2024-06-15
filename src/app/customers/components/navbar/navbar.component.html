@@ -1,31 +1,74 @@
 <!-- Page Navbar -->
-<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+<nav
+  class="custom-navbar"
+  [ngClass]="{ show: navbarVisible }"
+  [class.affix]="navbarFixed"
+  data-spy="affix"
+  data-offset-top="20"
+>
   <div class="container">
     <a class="logo" href="#">Le Quang Nhut</a>
     <ul class="nav">
       <li class="item">
-        <a class="link" href="#home">Home</a>
+        <a
+          class="link"
+          (click)="onNavLinkClick($event, 'home')"
+          href="javascript:void(0)"
+          >Home</a
+        >
       </li>
       <li class="item">
-        <a class="link" href="#about">About</a>
+        <a
+          class="link"
+          (click)="onNavLinkClick($event, 'about')"
+          href="javascript:void(0)"
+          >About</a
+        >
       </li>
       <li class="item">
-        <a class="link" href="#portfolio">Portfolio</a>
+        <a
+          class="link"
+          (click)="onNavLinkClick($event, 'portfolio')"
+          href="javascript:void(0)"
+          >Portfolio</a
+        >
       </li>
       <li class="item">
-        <a class="link" href="#testmonial">Testmonial</a>
+        <a
+          class="link"
+          (click)="onNavLinkClick($event, 'testmonial')"
+          href="javascript:void(0)"
+          >Testmonial</a
+        >
       </li>
       <li class="item">
-        <a class="link" href="#blog">Blog</a>
+        <a
+          class="link"
+          (click)="onNavLinkClick($event, 'blog')"
+          href="javascript:void(0)"
+        ></a>
       </li>
       <li class="item">
-        <a class="link" href="#contact">Contact</a>
+        <a
+          class="link"
+          (click)="onNavLinkClick($event, 'contact')"
+          href="javascript:void(0)"
+          >Contact</a
+        >
       </li>
       <li class="item ml-md-3">
-        <a href="components.html" class="btn btn-primary">Components</a>
+        <a
+          routerLink="/admin"
+          routerLinkActive="true"
+          ariaCurrentWhenActive="page"
+          class="btn btn-primary"
+          >Go to admin</a
+        >
       </li>
     </ul>
     <a
+      #navToggle
+      (click)="toggleNavbar()"
       href="javascript:void(0)"
       id="nav-toggle"
       class="hamburger hamburger--elastic"

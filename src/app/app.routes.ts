@@ -1,11 +1,9 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './administrator/components/auth/login/login.component';
+import { MainComponent } from './customers/components/main/main.component';
 
 export const routes: Routes = [
-  { title: 'Le Quang Nhut | Login', path: 'login', component: LoginComponent },
-  { title: 'Le Quang Nhut | Home', path: 'home', component: AppComponent },
+  { title: 'Le Quang Nhut | Home', path: 'home', component: MainComponent },
   {
     path: 'admin',
     loadChildren: () =>
