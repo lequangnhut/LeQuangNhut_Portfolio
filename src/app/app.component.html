@@ -1,11 +1,11 @@
 <!-- Page Navbar -->
-<ngx-navbar></ngx-navbar>
+<ngx-navbar *ngIf="showNavbar"></ngx-navbar>
 <!-- End of Page Navbar -->
 
 <!-- Start main -->
-<ngx-main></ngx-main>
+<router-outlet></router-outlet>
 <!-- end main -->
 
 <!-- footer -->
-<ngx-footer></ngx-footer>
+<ngx-footer *ngIf="showFooter"></ngx-footer>
 <!-- end of page footer -->
