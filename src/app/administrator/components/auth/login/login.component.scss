@@ -1,0 +1,63 @@
+.container {
+  max-width: 1320px;
+}
+
+.logo {
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 280px;
+  }
+}
+
+.logo img {
+  max-height: 26px;
+  margin-right: 6px;
+}
+
+.logo span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+}
+
+.card-body {
+  padding: 0 20px 20px 20px;
+}
+
+.card-title {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #012970;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.input-group input {
+  border-radius: 3px;
+  background: white;
+}
+
+#inputGroupPrepend {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#yourUsername {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#yourPassword {
+  background: white;
+}

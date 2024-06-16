@@ -10,8 +10,6 @@ import {
 
 @Component({
   selector: 'ngx-navbar',
-  standalone: true,
-  imports: [NgClass, RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
