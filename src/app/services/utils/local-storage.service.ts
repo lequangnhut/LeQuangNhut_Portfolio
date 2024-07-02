@@ -3,7 +3,7 @@ import CryptoJS from 'crypto-js';
 
 @Injectable({ providedIn: 'root' })
 export class LocalStorageService {
-  private secretKey = 'your-secret-key';
+  private secretKey = '3dc';
 
   constructor() {}
 
