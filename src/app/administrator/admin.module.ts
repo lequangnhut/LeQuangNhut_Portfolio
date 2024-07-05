@@ -1,8 +1,8 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {AdminRoutingModule} from './admin-routing.module';
-import {LoginComponent} from './components/auth/login/login.component';
-import {DashboardComponent} from "./components/page/dashboard/dashboard.component";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { AdminRoutingModule } from './admin-routing.module';
+import { LoginComponent } from './page/auth/login/login.component';
+import { DashboardComponent } from './page/dashboard/dashboard.component';
 
 @NgModule({
   imports: [

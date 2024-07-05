@@ -1,9 +1,9 @@
-import {Router} from '@angular/router';
-import {Component} from '@angular/core';
-import {AuthService} from '../../../services/auth/auth.service';
-import {FormsModule} from '@angular/forms';
-import {NgIf} from '@angular/common';
-import {AlertService} from "../../../../services/utils/alert.service";
+import { Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { AuthService } from '../../../services/auth/auth.service';
+import { FormsModule } from '@angular/forms';
+import { NgIf } from '@angular/common';
+import { AlertService } from "../../../../services/utils/alert.service";
 
 @Component({
   selector: 'ngx-login',
@@ -28,7 +28,7 @@ export class LoginComponent {
    */
   onSubmit(): void {
     if (this.authService.login(this.username, this.password)) {
-      this.router.navigate(['/admin/dashboard']);
+      window.location.href = '/admin/dashboard'
       this.alertService.showToast('success', 'Login successfully !');
     } else {
       this.alertService.showAlert('error', 'Login Failed', 'Invalid username or password');

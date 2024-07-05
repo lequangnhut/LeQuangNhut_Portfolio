@@ -7,9 +7,10 @@ import {NavigationEnd, Router} from '@angular/router';
 })
 export class AppComponent {
   showNavbar = true;
-  showHeader = true;
-  showSlideBar = true;
   showFooter = true;
+  showHeaderAdmin = true;
+  showSlideBarAdmin = true;
+  showFooterAdmin = true;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
@@ -21,20 +22,23 @@ export class AppComponent {
 
   updateVisibility(url: string) {
     if (url.startsWith('/admin/')) {
-      this.showHeader = true;
-      this.showSlideBar = true;
+      this.showHeaderAdmin = true;
+      this.showSlideBarAdmin = true;
+      this.showFooterAdmin = true;
       this.showNavbar = false;
       this.showFooter = false;
     } else if (url === '/admin') {
       this.showNavbar = false;
       this.showFooter = false;
-      this.showHeader = false;
-      this.showSlideBar = false;
+      this.showHeaderAdmin = false;
+      this.showSlideBarAdmin = false;
+      this.showFooterAdmin = false;
     } else {
       this.showNavbar = true;
       this.showFooter = true;
-      this.showHeader = false;
-      this.showSlideBar = false;
+      this.showHeaderAdmin = false;
+      this.showSlideBarAdmin = false;
+      this.showFooterAdmin = false;
     }
   }
 }
