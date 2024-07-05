@@ -1,5 +1,3 @@
-import { NgClass } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import {
   Component,
   ElementRef,
@@ -18,7 +16,7 @@ export class NavbarComponent {
   navbarVisible = false;
   navbarFixed = false;
 
-  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
+  constructor(private renderer: Renderer2, private elementRef: ElementRef) { }
 
   onNavLinkClick(event: Event, sectionId: string): void {
     event.preventDefault();

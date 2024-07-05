@@ -18,10 +18,58 @@
     <title>Le Quang Nhut</title>
     <!-- Favicons -->
     <link href="./assets/customer/imgs/favicon.png" rel="icon" />
-    <link href="./assets/customer/imgs/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="./assets/customer/imgs/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
 
-    <!-- Bootstrap + Meyawo main styles -->
-    <link rel="stylesheet" href="./assets/customer/css/meyawo.css" />
+    <script>
+      (function () {
+        var link;
+        if (window.location.pathname.startsWith("/admin/")) {
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./assets/admin/vendor/bootstrap/css/bootstrap.min.css";
+          document.head.appendChild(link);
+
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href =
+            "./assets/admin/vendor/bootstrap-icons/bootstrap-icons.css";
+          document.head.appendChild(link);
+
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./assets/admin/vendor/boxicons/css/boxicons.min.css";
+          document.head.appendChild(link);
+
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./assets/admin/vendor/quill/quill.snow.css";
+          document.head.appendChild(link);
+
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./assets/admin/vendor/quill/quill.bubble.css";
+          document.head.appendChild(link);
+
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./assets/admin/vendor/remixicon/remixicon.css";
+          document.head.appendChild(link);
+
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./assets/admin/vendor/simple-datatables/style.css";
+          document.head.appendChild(link);
+        } else {
+          link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./assets/customer/css/meyawo.css";
+          document.head.appendChild(link);
+        }
+      })();
+    </script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <ngx-init></ngx-init>

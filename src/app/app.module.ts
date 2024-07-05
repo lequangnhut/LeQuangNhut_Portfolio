@@ -1,18 +1,27 @@
-import {NgModule} from '@angular/core';
-import {AppComponent} from './app.component';
-import {NavbarComponent} from './customers/components/navbar/navbar.component';
-import {FooterComponent} from './customers/components/footer/footer.component';
-import {BrowserModule} from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {RouterModule} from '@angular/router';
-import {AppRoutingModule} from './app.routes';
-import {HttpClientModule} from "@angular/common/http";
-import {SweetAlert2Module} from "@sweetalert2/ngx-sweetalert2";
-import {ToastrService} from "ngx-toastr";
-import {HeaderAdminComponent} from "./administrator/components/header-admin/header-admin.component";
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './customers/components/navbar/navbar.component';
+import { FooterComponent } from './customers/components/footer/footer.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.routes';
+import { HttpClientModule } from "@angular/common/http";
+import { SweetAlert2Module } from "@sweetalert2/ngx-sweetalert2";
+import { ToastrService } from "ngx-toastr";
+import { HeaderAdminComponent } from "./administrator/components/header-admin/header-admin.component";
+import { FooterAdminComponent } from './administrator/components/footer-admin/footer-admin.component';
+import { SlidebarAdminComponent } from './administrator/components/slidebar-admin/slidebar-admin.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HeaderAdminComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    HeaderAdminComponent,
+    FooterAdminComponent,
+    SlidebarAdminComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

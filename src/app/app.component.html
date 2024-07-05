@@ -1,13 +1,20 @@
-<!-- Page Navbar -->
+<!-- Start Navbar -->
 <ngx-navbar *ngIf="showNavbar"></ngx-navbar>
-<!-- End of Page Navbar -->
+<!-- End of Navbar -->
 
-<ngx-header-admin *ngIf="showHeader"></ngx-header-admin>
+<!-- Start Header Admin -->
+<ngx-header-admin *ngIf="showHeaderAdmin"></ngx-header-admin>
+<!-- End of Header Admin -->
 
-<!-- Start main -->
+<!-- Start Slidebar Admin -->
+<ngx-slidebar-admin *ngIf="showSlideBarAdmin"></ngx-slidebar-admin>
+<!-- End of Slidebar Admin -->
+
+<!-- Start Main -->
 <router-outlet></router-outlet>
-<!-- end main -->
+<!-- end Main -->
 
-<!-- footer -->
+<!-- Start Footer -->
 <ngx-footer *ngIf="showFooter"></ngx-footer>
-<!-- end of page footer -->
+<ngx-footer-admin *ngIf="showFooterAdmin"></ngx-footer-admin>
+<!-- end of Footer -->
