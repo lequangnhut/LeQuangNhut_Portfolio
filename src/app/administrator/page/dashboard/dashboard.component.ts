@@ -1,7 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
+import ApexCharts from 'apexcharts';
 import * as echarts from 'echarts';
-
-declare var ApexCharts: any;
 
 @Component({
   selector: 'ngx-dashboard',

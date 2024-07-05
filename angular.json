@@ -26,15 +26,6 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": [
-              "src/assets/admin/vendor/apexcharts/apexcharts.min.js",
-              "src/assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js",
-              "src/assets/admin/vendor/chart.js/chart.umd.js",
-              "src/assets/admin/vendor/echarts/echarts.min.js",
-              "src/assets/admin/vendor/quill/quill.js",
-              "src/assets/admin/vendor/simple-datatables/simple-datatables.js",
-              "src/assets/admin/vendor/tinymce/tinymce.min.js",
-              "src/assets/admin/vendor/php-email-form/validate.js",
-              "src/assets/admin/js/main.js",
               "src/assets/customer/vendors/jquery/jquery-3.4.1.js",
               "src/assets/customer/vendors/bootstrap/bootstrap.bundle.js"
             ]
