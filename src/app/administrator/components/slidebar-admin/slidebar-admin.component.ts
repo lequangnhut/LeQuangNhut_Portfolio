@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './slidebar-admin.component.scss'
 })
 export class SlidebarAdminComponent {
+  activeLink: string | null = null;
 
+  constructor() { }
+
+  ngOnInit() { }
+
+  setActiveLink(linkName: string) {
+    this.activeLink = linkName;
+  }
 }
